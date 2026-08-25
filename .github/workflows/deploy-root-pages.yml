@@ -41,7 +41,7 @@ jobs:
         working-directory: site
         env:
           VITE_BASE_PATH: /
-          VITE_TRPC_API_ORIGIN: https://p34nutsart-jjmeco2k.manus.space
+          VITE_TRPC_API_ORIGIN: https://p34nuts-merch-store.onrender.com
           VITE_SHOP_URL: https://p34nuts-merch-store.onrender.com/shop
           VITE_PAYPAL_DONATION_URL: https://www.paypal.com/pool/9rRi3AduQj?sr=wccr
           GITHUB_PAGES_SITE_ORIGIN: https://p34nuts.github.io
