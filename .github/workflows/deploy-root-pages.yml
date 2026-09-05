@@ -23,7 +23,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: P34nuts/p34nuts-official-website
-          ref: main
+          ref: a131e8e78a411b784057d25a683059fe4817afa6
           path: site
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
@@ -54,4 +54,4 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
-# Root Pages always rebuilds from the current main of p34nuts-official-website.
+# Temporary restore deployment: this pins the published site to the verified original commit.
