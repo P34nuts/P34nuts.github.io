@@ -1,4 +1,4 @@
 Root Pages rebuild trigger for the current P34nuts official website source.
 Source repository: P34nuts/p34nuts-official-website
-Source commit: 88064d57e31ee2df5961a8e6e8a3d8f06b6c60a6
-Current track starts muted on homepage load and continues at the same position when sound is enabled.
+Source commit: a3bba3b9d636982f9c664c92c79cafb1a9cbf09e
+Autoplay is explicitly triggered after media readiness while remaining muted until user interaction.
