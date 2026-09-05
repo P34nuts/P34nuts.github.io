@@ -1,4 +1,4 @@
 Root Pages rebuild trigger for the current P34nuts official website source.
 Source repository: P34nuts/p34nuts-official-website
-Source commit: c8af7cef78fde7e582a6aa1ad0bc02d1819c82bc
-Mute/unmute is handled directly on the audio element and preserves currentTime.
+Source commit: c838bb5454deee587779d832715626bd00cad8c4
+Autoplay-blocked browsers now show a truthful ready state and start only on the first user tap; mute/unmute preserves currentTime.
