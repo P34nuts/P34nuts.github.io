@@ -1,4 +1,4 @@
 Root Pages rebuild trigger for the current P34nuts official website source.
 Source repository: P34nuts/p34nuts-official-website
-Source commit: b5b6760b120089e0d03a34f247c8db4b08b6c67b
-Includes the faster transparent vinyl turntable and the synchronized notation staff under ALL FRAMES.
+Source commit: e42f7f9f9ec3aee2d64a9b0d1314dfa1d0ec5a82
+Includes corrected needle placement, vinyl inertia, and the independent free-motion notation scene.
