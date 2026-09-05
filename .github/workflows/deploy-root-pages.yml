@@ -53,3 +53,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+# Root Pages always rebuilds from the current main of p34nuts-official-website.
