@@ -1,3 +1,4 @@
 Root Pages rebuild trigger for the current P34nuts official website source.
 Source repository: P34nuts/p34nuts-official-website
-Source commit: 92c268d547dc02beb01e5cf02fbc2bf0f585df13
+Source commit: a131e8e78a411b784057d25a683059fe4817afa6
+Rollback to original pre-vinyl-animation state.
