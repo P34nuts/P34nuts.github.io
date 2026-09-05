@@ -1,4 +1,4 @@
 Root Pages rebuild trigger for the current P34nuts official website source.
 Source repository: P34nuts/p34nuts-official-website
-Source commit: a3bba3b9d636982f9c664c92c79cafb1a9cbf09e
-Autoplay is explicitly triggered after media readiness while remaining muted until user interaction.
+Source commit: c8af7cef78fde7e582a6aa1ad0bc02d1819c82bc
+Mute/unmute is handled directly on the audio element and preserves currentTime.
