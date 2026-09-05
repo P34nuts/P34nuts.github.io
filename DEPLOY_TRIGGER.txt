@@ -1,4 +1,4 @@
 Root Pages rebuild trigger for the current P34nuts official website source.
 Source repository: P34nuts/p34nuts-official-website
-Source commit: 5cd18881b28a2e26735d3bd81773503c1ef0610b
-Includes the scroll-driven P34nuts vinyl turntable animation.
+Source commit: b5b6760b120089e0d03a34f247c8db4b08b6c67b
+Includes the faster transparent vinyl turntable and the synchronized notation staff under ALL FRAMES.
