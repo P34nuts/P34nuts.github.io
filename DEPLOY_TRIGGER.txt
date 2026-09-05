@@ -1,4 +1,4 @@
 Root Pages rebuild trigger for the current P34nuts official website source.
 Source repository: P34nuts/p34nuts-official-website
-Source commit: 13f3972164517b0317b70e0f7c05d11d766f3640
-Includes the current-track player and the first direct audio file: DeinNameaufnemStein.mp3.
+Source commit: 88064d57e31ee2df5961a8e6e8a3d8f06b6c60a6
+Current track starts muted on homepage load and continues at the same position when sound is enabled.
