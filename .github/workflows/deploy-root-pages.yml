@@ -23,7 +23,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: P34nuts/p34nuts-official-website
-          ref: dcf870e484dacd01d762dca26174a6c4db89a264
+          ref: 99d7c9ead98fe1e637e8175212c616ed936d75a4
           path: site
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
