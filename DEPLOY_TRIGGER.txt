@@ -1,3 +1,3 @@
 Root Pages rebuild trigger for the current P34nuts official website source.
 Source repository: P34nuts/p34nuts-official-website
-Source commit: f633bc8
+Source commit: f633bc828dfa7a52443c58ebbd262b47a28e7eff
