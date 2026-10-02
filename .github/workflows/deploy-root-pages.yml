@@ -23,7 +23,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: P34nuts/p34nuts-official-website
-          ref: 0a144124e33c1825da75d336bcc0b1c5d2ef351d
+          ref: b68aee5
           path: site
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
@@ -56,4 +56,4 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
-# Published source pin: keep the root Pages deployment aligned with the merged website commit.
+# Published source pin: keep the root Pages deployment aligned with the Last Drop AAA game release.
