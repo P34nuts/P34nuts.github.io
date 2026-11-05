@@ -48,6 +48,11 @@ jobs:
           VITE_PAYPAL_DONATION_URL: https://www.paypal.com/pool/9rRi3AduQj?sr=wccr
           GITHUB_PAGES_SITE_ORIGIN: https://p34nuts.github.io
         run: pnpm build:github-pages && cp dist/public/index.html dist/public/404.html
+      - name: Add CarLoMind page and AdMob app-ads.txt
+        run: |
+          mkdir -p site/dist/public/CarLoMind
+          cp -a CarLoMind/. site/dist/public/CarLoMind/
+          cp app-ads.txt site/dist/public/app-ads.txt
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
