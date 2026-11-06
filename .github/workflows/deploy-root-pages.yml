@@ -23,7 +23,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: P34nuts/p34nuts-official-website
-          ref: 1c17b742f72eeb04de6043c881e9dc7ed36b260e
+          ref: 4d5fd709006c2bfd6ef55963e6424f01c657ee13
           path: site
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
@@ -40,7 +40,7 @@ jobs:
       - name: Build root Pages artifact
         working-directory: site
         env:
-          VITE_BASE_PATH: /
+          VITE_BASE_PATH: /artist/
           VITE_TRPC_API_ORIGIN: https://p34nuts-merch-store.onrender.com
           VITE_SHOP_URL: https://p34nuts-merch-store.onrender.com/shop
           VITE_SUPABASE_URL: https://rkqyfsoybvfvlionomkg.supabase.co
@@ -48,8 +48,15 @@ jobs:
           VITE_PAYPAL_DONATION_URL: https://www.paypal.com/pool/9rRi3AduQj?sr=wccr
           GITHUB_PAGES_SITE_ORIGIN: https://p34nuts.github.io
         run: pnpm build:github-pages && cp dist/public/index.html dist/public/404.html
-      - name: Add CarLoMind page and AdMob app-ads.txt
+      - name: Assemble developer root and preserve existing project pages
         run: |
+          mv site/dist/public site/dist/artist-site
+          mkdir -p site/dist/public
+          mv site/dist/artist-site site/dist/public/artist
+          cp index.html site/dist/public/index.html
+          cp index.html site/dist/public/404.html
+          cp styles.css site/dist/public/styles.css
+          cp manus-routes.json site/dist/public/manus-routes.json
           mkdir -p site/dist/public/CarLoMind
           cp -a CarLoMind/. site/dist/public/CarLoMind/
           cp app-ads.txt site/dist/public/app-ads.txt
