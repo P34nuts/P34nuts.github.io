@@ -67,5 +67,7 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          timeout: 1800000
 
 # Published source pin: keep the root Pages deployment aligned with the Last Drop AAA game release.
