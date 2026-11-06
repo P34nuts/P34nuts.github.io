@@ -1,26 +1,25 @@
-# P34nuts Root Pages – Entwickler-Startseite
+# P34nuts Root Pages – Studio Board
 
-## Umsetzung
+Die Root-Seite positioniert P34nuts als unabhängiges Studio für sechs eigenständige Projektwelten:
 
-Die Root-URL `https://p34nuts.github.io/` ist eine eigenständige, statische Entwickler-Startseite. Sie stellt P34nuts als Entwickler, Artist und Autor vor und führt über einzelne Projektkarten zu Musik, Apps, Spielen und Büchern.
+1. Artist und Songwriter P34nuts mit Spotify, Suno und der ausführlichen Artist-Seite.
+2. CarLoMind als praktische Android-Parkplatz-App mit Bluetooth-Automatik, manuellen Standorten, Karten-, Kalender- und Widget-Funktionen.
+3. MindFox als lokales Android-Partyspiel für 2–8 Spieler mit Bluff-, Voting-, Reveal- und Scoreboard-Runden.
+4. FlipVoice als mobile-first Partyspiel-PWA/Android-Hülle mit Pass & Play, WLAN-Lobby, QR-Code, Audio-Reverse und Buzzer.
+5. Resonanzfall / Protokoll I als Science-Fiction-Thriller.
+6. Emil entdeckt die Welt als sechsteilige Kinderbuchserie.
 
-Die bisherige React-/Artist-Website wird im Pages-Workflow mit `VITE_BASE_PATH=/artist/` gebaut und unter `/artist/` veröffentlicht. Die bestehende CarLoMind-Seite bleibt unter `/CarLoMind/`. Der Root-Wrapper liefert die Landingpage, Styles und das Routenmanifest direkt.
+## Designsystem
 
-## Gestaltung
+Jede Karte folgt einer eigenen visuellen Produktlogik: Audio-Signal und dunkle Konzertfarben für Musik, Kartenraster und Türkis für CarLoMind, Neon-Violett und Augenmotiv für MindFox, Audio-Wellen und Cyan/Magenta für FlipVoice, Orbit/Planet und Nachtfarben für Resonanzfall sowie Himmel, Sonne und Route für Emil. Die gemeinsame Studio-Klammer bleibt eine redaktionelle Typografie, nummerierte Kapitel und klare pillenförmige Links.
 
-Die Grundästhetik bleibt eine reduzierte Editorial-/Studio-Oberfläche: Papierfläche, tiefes Schwarz, Signalrot und ein blasses Blaugrün. Große typografische Überschriften, nummerierte Projektkader und pillenförmige Direktlinks verbinden die drei Arbeitsfelder Code, Klang und Geschichten.
+## Inhaltliche Erweiterung
 
-Die Projektkarten verwenden zusätzlich eigene Produktwelten, damit die Darstellung nicht wie ein neutrales Portfolio-Raster wirkt:
+Die Karten enthalten nun Positionierung, Funktionsbeschreibung, Zielgruppen-/Format-Hinweise, technische Schlagworte, Status und direkte Links. Die Texte wurden gegen die lokalen README- und Übergabedokumente der Projekte abgeglichen; nicht bestätigte Store- oder Releasebehauptungen wurden vermieden.
 
-- **P34nuts Musik:** dunkle Nachtfläche, rote Platten-/Signalformen und Waveform-Motive.
-- **CarLoMind:** helles Navigationsgrün, Parkplatzraster, Kartenpin und „Save / Find / Return“-Sprache.
-- **MindFox:** violette Neon-Quizshow, leuchtende Fox-Augen und Bluff-/Vote-/Reveal-Motive.
-- **FlipVoice:** dunkle Cyan-/Pink-Audiofläche, Waveform und Reverse-Pfeil.
-- **Resonanzfall:** tiefer Weltraum, Planet, Orbit und warme Signalfarbe.
-- **Emil entdeckt die Welt:** Himmel, Sonne, Wolken und eine gestrichelte Entdeckerroute.
+## QA
 
-Die Gestaltung verwendet ausschließlich CSS-Illustrationen und vorhandene Schrift-/Browsermittel; neue externe Infrastruktur oder Bildabhängigkeiten sind nicht erforderlich. Die Produktkarten bleiben semantisch als Artikel strukturiert, keyboard-bedienbar und auf mobilen Geräten untereinander lesbar.
-
-## Links und Sichtbarkeit
-
-MindFox verweist auf das inzwischen private Repository, den Closed-Test-Einstieg und die öffentliche Datenschutzseite. FlipVoice verweist auf das private Hauptrepository und die öffentliche Datenschutzseite. Nicht verifizierte öffentliche Play-Store-Links werden nicht als verfügbar dargestellt.
+- HTML/CSS lokal mit `git diff --check` und Parser-Smoke prüfen.
+- Alle sechs Projektanker und externen Direktlinks prüfen.
+- Root, `/artist/` und `/CarLoMind/` nach dem Pages-Deploy per HTTP prüfen.
+- Responsive Darstellung für Desktop und Mobil kontrollieren.
