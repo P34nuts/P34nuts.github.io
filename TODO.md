@@ -9,5 +9,8 @@
 - [x] Die bisherige Artist-Seite unter `/artist/` erreichbar machen.
 - [x] CarLoMind unter `/CarLoMind/` erhalten.
 - [x] Responsive, zugängliche Gestaltung und Routenmanifest ergänzen.
-- [x] GitHub-Pages-Build lokal und über HTTP-Smoke-Test prüfen.
+- [x] MindFox-Links auf das neue private Repository und den Closed-Test aktualisieren.
+- [x] FlipVoice mit privatem Hauptrepository und öffentlicher Datenschutzseite verlinken.
+- [x] Jede vorgestellte Produktwelt durch eigene Farben, Motive und Mikrocopy sichtbar machen.
+- [ ] Lokalen HTML-/CSS-Smoke-Test und den GitHub-Pages-Produktionsbuild durchführen.
 - [ ] Änderung nach erfolgreichem Build nach `main` pushen.
